@@ -58,7 +58,7 @@ var countyShap=svg.append('g').attr('class','counties').selectAll('path')
 .attr('d', map).on('mouseover',(d)=>{
     tooltip
     .style('opacity',1)
-    .html(d.properties.states[0]? d.properties.states[0]['area_name'] + ', ' + d.properties.states[0]['state'] + ': ' +d.properties.states[0].bachelorsOrHigher + '%': 'nil').attr('data-education',d.properties.states[0].bachelorsOrHigher?d.properties.states[0].bachelorsOrHigher:0)
+    .html(d.properties.states[0]? d.properties.states[0]['area_name'] + ', ' + d.properties.states[0]['state'] + ': ' +d.properties.states[0].bachelorsOrHigher + '%': 'nil').attr('data-education',d.properties.states[0].bachelorsOrHigher?d.properties.states[0].bachelorsOrHigher:0).transition().duration(250)
  
  
 }) //tooltip
