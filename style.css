@@ -1,0 +1,20 @@
+.top{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.tite{
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:10px;
+  text-align:center;
+}
+.counties {
+  fill: none;
+}
+
+.states {
+  fill: none;
+  stroke: #fff;
+  stroke-linejoin: round;
+}
